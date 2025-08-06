@@ -1,0 +1,67 @@
+# Gosypt (Golang simplified encryption)
+
+> Go 语言实现的 jasypt 平替
+
+`Golang` implements `jasypt` encryption and decryption
+
+## 运行步骤
+
+1. 确保当前工作目录为项目根目录
+
+```bash
+cd gosypt
+```
+
+2. 安装依赖
+
+```bash
+go mod tidy
+```
+
+3. 运行单个示例
+
+```bash
+# 运行基本示例
+go run examples/main.go
+```
+
+## 支持的加密算法
+
+逐步会实现以下加密算法
+
+> DES 系列算法
+
+- PBEWITHMD5ANDDES
+- PBEWITHMD5ANDTRIPLEDES
+- PBEWITHSHA1ANDDESEDE
+
+> RC4 系列算法
+
+- PBEWITHSHA1ANDRC4_40
+- PBEWITHSHA1ANDRC4_128
+
+> AES 系列算法 - HMAC-SHA1
+
+- PBEWITHHMACSHA1ANDAES_128
+- PBEWITHHMACSHA1ANDAES_256
+
+> AES 系列算法 - HMAC-SHA224
+
+- PBEWITHHMACSHA224ANDAES_128
+- PBEWITHHMACSHA224ANDAES_256
+
+> AES 系列算法 - HMAC-SHA256
+
+- PBEWITHHMACSHA256ANDAES_128
+- PBEWITHHMACSHA256ANDAES_256
+
+> AES 系列算法 - HMAC-SHA384
+
+- PBEWITHHMACSHA384ANDAES_128
+- PBEWITHHMACSHA384ANDAES_256
+
+> AES 系列算法 - HMAC-SHA512
+
+- PBEWITHHMACSHA512ANDAES_128
+- PBEWITHHMACSHA512ANDAES_256
+- PBEWITHHMACSHA512ANDAES_256_GCM
